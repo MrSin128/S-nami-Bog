@@ -1,0 +1,18 @@
+
+
+characters ={
+	SOV_Nicholas_II = {
+		name = SOV_CHARACTER_NICHOLAS_II
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_Nicholas_II
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = SOV_NICHOLAS_II_DESC
+			expire = "1953.3.1.1"
+		}
+	}
+
+	

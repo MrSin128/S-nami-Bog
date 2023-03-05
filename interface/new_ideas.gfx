@@ -1,0 +1,11 @@
+spriteTypes = {	
+
+
+
+	SpriteType = {
+		name = "GFX_the_victor_of_the_two_great_war"
+		texturefile = "gfx/interface/ideas/idea_Victor_of_the_Two_Great_Wars.dds"
+		noOfFrames = 18
+	}
+	
+}
