@@ -1,0 +1,17 @@
+characters = {
+	
+	GER_Wilhelm_II	= {
+		name = "Wilhelm II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Wilhelm_II.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1953.3.1.1"
+			desc = POLITICS_WILHELM_II_DESC
+		}	
+	}
+
+}

@@ -1,0 +1,17 @@
+characters = {
+	
+	AUS_Ferdinand_II = {
+		name = "Ferdinand II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/Ferdinand_II.pdn"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1953.3.1.1"
+			desc = POLITICS_FERDINAND_II_DESC
+		}	
+	}
+
+}
