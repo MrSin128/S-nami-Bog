@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-		monty's_army = {
+		ENG_monty's_army = {
 			picture = monty's_army
 			
 			allowed = {
@@ -29,7 +29,7 @@ ideas = {
 ideas = {
 
 	country = {
-		socialist_divide = {
+		ENG_socialist_divide = {
 			picture = socialist_divide
 			
 			allowed = {
@@ -58,7 +58,7 @@ ideas = {
 ideas = {
 
 	country = {
-		high_public_support = {
+		ENG_high_public_support = {
 			picture = high_public_support
 			
 			allowed = {
