@@ -1,0 +1,22 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_the_victor_of_the_two_great_war"
+		texturefile = "gfx/interface/ideas/idea_Victor_of_the_Two_Great_Wars.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_monty's_army"
+		texturefile = "gfx/interface/ideas/idea_Monty's_Army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_socialist_divide"
+		texturefile = "gfx/interface/ideas/idea_Socialist_Divide.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_high_public_support"
+		texturefile = "gfx/interface/ideas/idea_High_Public_Support.dds"
+	}
+}
