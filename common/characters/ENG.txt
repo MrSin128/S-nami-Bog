@@ -1,0 +1,16 @@
+characters = {
+	
+	ENG_HG_Wells = {
+		name = "H.G. Wells"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/H.G_Wells_SNB_Style.png"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1953.3.1.1"
+			desc = POLITICS_HG_WELLS_DESC
+		}	
+	}
+}

@@ -1,7 +1,8 @@
 ideas = {
 
 	country = {
-		ENG_monty's_army = {
+
+		ENG_montys_army = {
 			picture = monty's_army
 			
 			allowed = {
@@ -23,12 +24,8 @@ ideas = {
 				stability_factor = -0.1
 		    }
 		}
-	}
-}
 
-ideas = {
-
-	country = {
+		
 		ENG_socialist_divide = {
 			picture = socialist_divide
 			
@@ -48,16 +45,9 @@ ideas = {
 			
 			modifier = {
 				socialism_drift = 0.02
-				
-
+			}
 		}
-		}
-	}
-}
 
-ideas = {
-
-	country = {
 		ENG_high_public_support = {
 			picture = high_public_support
 			
@@ -80,5 +70,9 @@ ideas = {
 				war_support_factor = 0.25
 		    }
 		}
+
 	}
 }
+
+
+

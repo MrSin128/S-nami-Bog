@@ -13,5 +13,4 @@ characters = {
 			desc = POLITICS_FERDINAND_II_DESC
 		}	
 	}
-
 }
