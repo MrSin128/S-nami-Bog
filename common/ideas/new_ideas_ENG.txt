@@ -20,7 +20,7 @@ ideas = {
 			}
 			
 			modifier = {
-				political_power_gain = -0.01
+				political_power_gain = -0.10
 				stability_factor = -0.1
 		    }
 		}
@@ -44,7 +44,7 @@ ideas = {
 			}
 			
 			modifier = {
-				socialism_drift = 0.02
+				Socialism_drift = 0.02
 			}
 		}
 
@@ -66,7 +66,7 @@ ideas = {
 			}
 			
 			modifier = {
-				drift_defense_factor = 0.05
+				drift_defence_factor = 0.05
 				war_support_factor = 0.25
 		    }
 		}

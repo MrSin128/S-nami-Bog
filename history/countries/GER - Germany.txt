@@ -18,10 +18,16 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 20
-	fascism = 40
-	communism = 20
-	neutrality = 20
+	liberalism = 10
+	liberal_conservatism = 10
+	democratic = 10 
+	social_democracy = 10 
+	socialism = 10 
+	communism = 10 
+	authoritarian_democracy = 10 
+	neutrality = 10 
+	fascism = 20
 }
+
 recruit_character = GER_Wilhelm_II
 

@@ -1,10 +1,9 @@
 ﻿l_english:
   SOV_the_victor_of_the_two_great_war:0 "The Victor of the Two Great Wars"
   SOV_the_victor_of_the_two_great_war_desc:0 "placeholder"
-  ENG_monty's_army:0 "Monty's Army"
-  ENG_monty's_army_desc:0 "While we managed to remove King George from Fair Albion last year, there are still some spineless bootlickers who have remained loyal to the King. These people have formed the “United Royal Army of the King”, often simply called Monty’s Army after its leader, Bernard “Monty” Montgomery. While they are currently not a risk to our regime, failure to deal with them could lead to the destruction of our Socialist Utopia."
+  ENG_montys_army:0 "Monty's Army"
+  ENG_montys_army_desc:0 "While we managed to remove King George from Fair Albion last year, there are still some spineless bootlickers who have remained loyal to the King. These people have formed the “United Royal Army of the King”, often simply called Monty’s Army after its leader, Bernard “Monty” Montgomery. While they are currently not a risk to our regime, failure to deal with them could lead to the destruction of our Socialist Utopia."
   ENG_socialist_divide:0 "Socialist Divide"
   ENG_socialist_divide_desc:0 "While our Government is united in our belief in Socialism, there is a great divide in our Government between the Fabian style socialists and the Hardline Marxists. Currently the Fabians are dominant under Chairman Wells, but the Hardliners still form a large opposition under Willie Gallacher."
-  ENG_high_popular_support:0 "High Popular Support"
-  ENG_high_popular_support_desc:0 "Our Revolution, despite what Royalist Propaganda may say, is broadly popular with the British Population. After the Tyranny of King George and his royal Dictatorship, the public has welcomed a Government that claims to truly care for them. This popularity, however, could vanish if the Government's factions begin to fight with each other, slowing down Governance.
-"
+  ENG_high_public_support:0 "High Popular Support"
+  ENG_high_public_support_desc:0 "Our Revolution, despite what Royalist Propaganda may say, is broadly popular with the British Population. After the Tyranny of King George and his royal Dictatorship, the public has welcomed a Government that claims to truly care for them. This popularity, however, could vanish if the Government's factions begin to fight with each other, slowing down Governance."
