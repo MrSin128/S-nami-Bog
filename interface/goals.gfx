@@ -1,0 +1,24 @@
+spriteTypes = {	
+
+	#### Russian goal icons
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_the_retierment"
+	texturefile = "gfx/interface/goals/GFX_goal_SOV_the_retierment.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_goal_SOV_the_tsar_intervines"
+	texturefile = "gfx/interface/goals/GFX_goal_SOV_the_tsar_intervines.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_emergency_elections"
+	texturefile = "gfx/interface/goals/GFX_goal_SOV_emergency_elections.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_sr_coup"
+	texturefile = "gfx/interface/goals/GFX_goal_SOV_sr_coup.dds"			
+	}	
+}
