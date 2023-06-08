@@ -1,0 +1,870 @@
+﻿focus_tree = {
+	id = russian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = SOV
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 2000 }
+	
+	### Russia Gouverment Path
+	
+	focus = {
+		id = SOV_the_retirement
+		icon = GFX_goal_SOV_the_retierment
+		x = 5
+		y = 1
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_the_coalition_breaks
+		icon = GFX_goal_SOV_the_retierment
+		x = 0
+		y = 1
+		relative_position_id = SOV_the_retirement
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_the_retirement}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 
+	}}
+	
+	### Elections
+	focus = {
+		id = SOV_emergency_elections
+		icon = GFX_goal_SOV_the_retierment
+		x = 0
+		y = 1
+		relative_position_id = SOV_the_coalition_breaks
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_the_coalition_breaks}
+		mutually_exclusive = { focus = SOV_the_tsar_intervines}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	###coup
+	focus = {
+		id = SOV_SR_coup
+		icon = GFX_goal_SOV_the_retierment
+		x = -7
+		y = 1
+		relative_position_id = SOV_emergency_elections
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_emergency_elections}
+		mutually_exclusive = {focus = SOV_free_and_fair}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	###Coup Hardliners
+	focus = {
+		id = SOV_hardliners
+		icon = GFX_goal_SOV_the_retierment
+		x = -2
+		y = 1
+		relative_position_id = SOV_SR_coup
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_SR_coup}
+		mutually_exclusive = {focus = SOV_moderates}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_boyevaya_organizatsiya
+		icon = GFX_goal_SOV_the_retierment
+		x = 1
+		y = 1
+		relative_position_id = SOV_hardliners
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_hardliners}
+		mutually_exclusive = {focus = SOV_the_political_leadership}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_provinsional_chairman_savinkov
+		icon = GFX_goal_SOV_the_retierment
+		x = 0
+		y = 2
+		relative_position_id = SOV_boyevaya_organizatsiya
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_boyevaya_organizatsiya}
+		mutually_exclusive = {}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_the_political_leadership
+		icon = GFX_goal_SOV_the_retierment
+		x = -1
+		y = 1
+		relative_position_id = SOV_hardliners
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_hardliners}
+		mutually_exclusive = {focus = SOV_boyevaya_organizatsiya}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_provinsional_chairman_spiridonova
+		icon = GFX_goal_SOV_the_retierment
+		x = 0
+		y = 2
+		relative_position_id = SOV_the_political_leadership
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_the_political_leadership}
+		mutually_exclusive = {}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	###Coup moderates
+	focus = {
+		id = SOV_moderates
+		icon = GFX_goal_SOV_the_retierment
+		x = 2
+		y = 1
+		relative_position_id = SOV_SR_coup
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_SR_coup}
+		mutually_exclusive = {focus = SOV_hardliners}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_a_russian_republic
+		icon = GFX_goal_SOV_the_retierment
+		x = -1
+		y = 1
+		relative_position_id = SOV_moderates
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_moderates}
+		mutually_exclusive = {focus = SOV_retain_the_tsarist_system}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_kerensky
+		icon = GFX_goal_SOV_the_retierment
+		x = 0
+		y = 2
+		relative_position_id = SOV_a_russian_republic
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_a_russian_republic}
+		mutually_exclusive = {}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_retain_the_tsarist_system
+		icon = GFX_goal_SOV_the_retierment
+		x = 1
+		y = 1
+		relative_position_id = SOV_moderates
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_moderates}
+		mutually_exclusive = {focus = SOV_a_russian_republic}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_chernov
+		icon = GFX_goal_SOV_the_retierment
+		x = 2
+		y = 2
+		relative_position_id = SOV_retain_the_tsarist_system
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_retain_the_tsarist_system focus = SOV_SR_victory}
+		mutually_exclusive = {}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	###I am the Senate
+	focus = {
+		id = SOV_free_and_fair
+		icon = GFX_goal_SOV_the_retierment
+		x = 0
+		y = 1
+		relative_position_id = SOV_emergency_elections
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_emergency_elections}
+		mutually_exclusive = {focus = SOV_SR_coup}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_KDP_victory
+		icon = GFX_goal_SOV_the_retierment
+		x = 0
+		y = 1
+		relative_position_id = SOV_free_and_fair
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_free_and_fair focus = SOV_the_tsar_intervines}
+		mutually_exclusive = { focus = SOV_KRP_victory OR SOV_SR_victroy}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_milyukov_holds
+		icon = GFX_goal_SOV_the_retierment
+		x = 0
+		y = 3
+		relative_position_id = SOV_KDP_victory
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_KDP_victory}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_SR_victory
+		icon = GFX_goal_SOV_the_retierment
+		x = -2
+		y = 1
+		relative_position_id = SOV_free_and_fair
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_free_and_fair focus}
+		mutually_exclusive = { focus = SOV_KDP_victory OR SOV_KRP_victroy}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_KRP_victory
+		icon = GFX_goal_SOV_the_retierment
+		x = 3
+		y = 1
+		relative_position_id = SOV_free_and_fair
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_free_and_fair focus = SOV_the_tsar_intervines}
+		mutually_exclusive = { focus = SOV_KDP_victory OR SOV_SR_victroy}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_to_the_abyss
+		icon = GFX_goal_SOV_the_retierment
+		x = 2
+		y = 1
+		relative_position_id = SOV_KRP_victory
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_KRP_victory
+		}
+		mutually_exclusive = { focus = SOV_the_new_stoypin}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_on_our_own
+		icon = GFX_goal_SOV_the_retierment
+		x = -1
+		y = 1
+		relative_position_id = SOV_to_the_abyss
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_to_the_abyss
+		}
+		mutually_exclusive = { focus = SOV_union_of_nation_and_labour focus = SOV_in_the_name_of_the_tsar}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_an_elected_romanov
+		icon = GFX_goal_SOV_the_retierment
+		x = 0
+		y = 1
+		relative_position_id = SOV_on_our_own
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_on_our_own
+		}
+		mutually_exclusive = {}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_union_of_nation_and_labour
+		icon = GFX_goal_SOV_the_retierment
+		x = 1
+		y = 1
+		relative_position_id = SOV_to_the_abyss
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_to_the_abyss
+		}
+		mutually_exclusive = { focus = SOV_on_our_own focus = SOV_in_the_name_of_the_tsar}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_leykhtenbergsky_rises
+		icon = GFX_goal_SOV_the_retierment
+		x = 0
+		y = 1
+		relative_position_id = SOV_union_of_nation_and_labour
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_union_of_nation_and_labour
+		}
+		mutually_exclusive = {}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_the_new_stoypin
+		icon = GFX_goal_SOV_the_retierment
+		x = -1
+		y = 1
+		relative_position_id = SOV_KRP_victory
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_KRP_victory}
+		mutually_exclusive = { focus = SOV_to_the_abyss}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_yusupov_to_the_helm
+		icon = GFX_goal_SOV_the_retierment
+		x = 0
+		y = 2
+		relative_position_id = SOV_the_new_stoypin
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_the_new_stoypin
+		}
+		mutually_exclusive = {}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	###Tsar
+	focus = {
+		id = SOV_the_tsar_intervines
+		icon = GFX_goal_SOV_the_retierment
+		x = 6
+		y = 0
+		relative_position_id = SOV_emergency_elections
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_the_coalition_breaks}
+		mutually_exclusive = { focus = SOV_emergency_elections}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+
+	focus = {
+		id = SOV_in_the_name_of_the_tsar
+		icon = GFX_goal_SOV_the_retierment
+		x = 4
+		y = 1
+		relative_position_id = SOV_to_the_abyss
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_to_the_abyss focus = SOV_the_tsar_intervines
+		}
+		mutually_exclusive = { focus = SOV_union_of_nation_and_labour focus = SOV_on_our_own}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_a_royal_mandate
+		icon = GFX_goal_SOV_the_retierment
+		x = 1
+		y = 1
+		relative_position_id = SOV_in_the_name_of_the_tsar
+		
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_in_the_name_of_the_tsar
+		}
+		mutually_exclusive = { focus = SOV_Shulgins_reigns}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+	
+	focus = {
+		id = SOV_Shulgins_reigns
+		icon = GFX_goal_SOV_the_retierment
+		x = -1
+		y = 1
+		relative_position_id = SOV_in_the_name_of_the_tsar
+	
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 0.1
+		prerequisite = {focus = SOV_in_the_name_of_the_tsar
+		}
+		mutually_exclusive = { focus = SOV_a_royal_mandate}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+		
+		ai_will_do = 5
+	}}
+}		
