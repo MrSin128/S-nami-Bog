@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = russian_focus
 	
 	country = {
@@ -73,7 +73,7 @@
 	### Elections
 	focus = {
 		id = SOV_emergency_elections
-		icon = GFX_goal_SOV_the_retierment
+		icon = GFX_goal_SOV_emergency_elections
 		x = 0
 		y = 1
 		relative_position_id = SOV_the_coalition_breaks
@@ -102,7 +102,7 @@
 	###coup
 	focus = {
 		id = SOV_SR_coup
-		icon = GFX_goal_SOV_the_retierment
+		icon = GFX_goal_SOV_sr_coup
 		x = -7
 		y = 1
 		relative_position_id = SOV_emergency_elections
@@ -755,7 +755,7 @@
 	###Tsar
 	focus = {
 		id = SOV_the_tsar_intervines
-		icon = GFX_goal_SOV_the_retierment
+		icon = GFX_goal_SOV_the_tsar_intervines
 		x = 6
 		y = 0
 		relative_position_id = SOV_emergency_elections
